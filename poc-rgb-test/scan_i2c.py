@@ -14,6 +14,9 @@ Usage: python scan_i2c.py
 
 import sys
 from nvapi_i2c import create_nvapi, NVAPI_OK
+from logger import setup_logger, log_session_start
+
+log = setup_logger("scan")
 
 
 def scan_i2c_bus(api, gpu_handle, port=1):
@@ -56,9 +59,12 @@ def main():
     print("=" * 60)
     print()
 
+    log_session_start(log, "scan_i2c.py")
+
     try:
         api, gpus = create_nvapi()
     except RuntimeError as e:
+        log.error(f"Failed to initialize NvAPI: {e}")
         print(f"\n[ERROR] {e}")
         sys.exit(1)
 
@@ -77,6 +83,7 @@ def main():
     print(f"{'='*60}")
 
     if not all_found:
+        log.warning("No I2C devices found on any port")
         print("\n  [!] No I2C devices found on any port.")
         print("  Possible reasons:")
         print("  - LED controller uses a different protocol (not standard I2C)")
@@ -85,6 +92,7 @@ def main():
         print("\n  Next step: Try running scan_i2c_extended.py with different speeds")
     else:
         for port, devices in all_found.items():
+            log.info(f"Port {port}: Found {len(devices)} device(s): {[f'0x{a:02X}' for a in devices]}")
             print(f"\n  Port {port}: Found {len(devices)} device(s)")
             for addr in devices:
                 label = identify_device(addr)
@@ -94,6 +102,9 @@ def main():
         print("  These are likely LED controllers for Colorful iGame.")
         print("  Use these addresses with set_blue.py")
 
+    log.info(f"Scan complete. Log saved to: rgb_debug.log")
+    print(f"\n  📄 Full debug log saved to: rgb_debug.log")
+    print(f"     Share this file if you need help debugging!")
     print()
 
 

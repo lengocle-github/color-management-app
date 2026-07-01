@@ -15,6 +15,9 @@ Usage: python set_blue.py
 import sys
 import time
 from nvapi_i2c import create_nvapi, NVAPI_OK
+from logger import setup_logger, log_session_start
+
+log = setup_logger("set_blue")
 
 # Nice blue color
 TARGET_COLOR = (0x00, 0x66, 0xFF)  # R=0, G=102, B=255 — vivid blue
@@ -123,9 +126,13 @@ def main():
     print("=" * 60)
     print()
 
+    log_session_start(log, "set_blue.py")
+    log.info(f"Target color: R={r} G={g} B={b} (#{r:02X}{g:02X}{b:02X})")
+
     try:
         api, gpus = create_nvapi()
     except RuntimeError as e:
+        log.error(f"Failed to initialize NvAPI: {e}")
         print(f"\n[ERROR] {e}")
         sys.exit(1)
 
@@ -183,9 +190,11 @@ def main():
         print("  3. The RTX 5070 may use a new protocol not covered here")
         print("  4. Try running with '--extended' flag for more protocol attempts")
         print()
-        print("  Please share the output of scan_i2c.py with me")
-        print("  so I can analyze which addresses respond and adjust the protocol.")
+        print("  📄 Full debug log saved to: rgb_debug.log")
+        print("  Please share this file so I can analyze what happened.")
         print(f"{'='*60}")
+        log.warning("No protocol succeeded. All attempts logged above.")
+        log.info("Share rgb_debug.log for analysis.")
 
 
 if __name__ == "__main__":

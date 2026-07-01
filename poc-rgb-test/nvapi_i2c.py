@@ -14,6 +14,10 @@ import sys
 from ctypes import (
     Structure, POINTER, c_uint, c_int, c_ubyte, c_void_p, c_uint32, byref, sizeof
 )
+from logger import setup_logger, log_nvapi_status, log_i2c_operation
+
+# Setup logger
+log = setup_logger("nvapi")
 
 # NvAPI Constants
 NVAPI_OK = 0
@@ -77,11 +81,14 @@ class NvAPI:
         for path in possible_paths:
             try:
                 self._nvapi = ctypes.WinDLL(path)
+                log.debug(f"Loaded NvAPI from: {path}")
                 break
-            except OSError:
+            except OSError as e:
+                log.debug(f"Failed to load from {path}: {e}")
                 continue
 
         if self._nvapi is None:
+            log.error("nvapi64.dll not found anywhere!")
             raise RuntimeError(
                 "nvapi64.dll not found. Make sure NVIDIA drivers are installed.\n"
                 "Download from: https://www.nvidia.com/drivers"
@@ -103,6 +110,7 @@ class NvAPI:
         """Initialize NvAPI."""
         func = ctypes.CFUNCTYPE(c_int)(self._get_func(NVAPI_INITIALIZE))
         status = func()
+        log_nvapi_status(log, "NvAPI_Initialize", status)
         if status != NVAPI_OK:
             raise RuntimeError(f"NvAPI_Initialize failed with status {status}")
         self._initialized = True
@@ -117,6 +125,7 @@ class NvAPI:
             self._get_func(NVAPI_ENUMPHYSICALGPUS)
         )
         status = func(gpu_handles, byref(gpu_count))
+        log_nvapi_status(log, "NvAPI_EnumPhysicalGPUs", status, f"count={gpu_count.value}")
         if status != NVAPI_OK:
             raise RuntimeError(f"NvAPI_EnumPhysicalGPUs failed with status {status}")
 
@@ -140,11 +149,11 @@ class NvAPI:
         """Write data to I2C device on GPU."""
         # Prepare register address buffer
         reg_size = len(reg_address_bytes)
-        reg_buf = (c_ubyte * reg_size)(*reg_address_bytes)
+        reg_buf = (c_ubyte * max(reg_size, 1))(*reg_address_bytes) if reg_size > 0 else (c_ubyte * 1)(0)
 
         # Prepare data buffer
         data_size = len(data_bytes)
-        data_buf = (c_ubyte * data_size)(*data_bytes)
+        data_buf = (c_ubyte * max(data_size, 1))(*data_bytes) if data_size > 0 else (c_ubyte * 1)(0)
 
         # Fill I2C info structure
         i2c_info = NV_I2C_INFO_V3()
@@ -166,6 +175,10 @@ class NvAPI:
         )
         unknown = c_uint32(0)
         status = func(gpu_handle, byref(i2c_info), byref(unknown))
+
+        # Log every I2C operation
+        log_i2c_operation(log, "WRITE", dev_address, port, reg_address_bytes, data_bytes, status)
+
         return status
 
     def i2c_read(self, gpu_handle, dev_address, reg_address_bytes, read_size,
@@ -173,7 +186,7 @@ class NvAPI:
         """Read data from I2C device on GPU."""
         # Prepare register address buffer
         reg_size = len(reg_address_bytes)
-        reg_buf = (c_ubyte * reg_size)(*reg_address_bytes)
+        reg_buf = (c_ubyte * max(reg_size, 1))(*reg_address_bytes) if reg_size > 0 else (c_ubyte * 1)(0)
 
         # Prepare data buffer for reading
         data_buf = (c_ubyte * read_size)()
@@ -199,8 +212,12 @@ class NvAPI:
         unknown = c_uint32(0)
         status = func(gpu_handle, byref(i2c_info), byref(unknown))
 
+        result_data = [data_buf[i] for i in range(read_size)] if status == NVAPI_OK else None
+        log_i2c_operation(log, "READ", dev_address, port, reg_address_bytes,
+                          result_data if result_data else [], status)
+
         if status == NVAPI_OK:
-            return [data_buf[i] for i in range(read_size)]
+            return result_data
         return None
 
 

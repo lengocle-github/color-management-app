@@ -274,3 +274,58 @@
 2026-07-01 20:40:41 | INFO    |   Full scan: 0x50 = 0x01
 2026-07-01 20:40:41 | INFO    |   Full scan: 0x54 = 0x03
 2026-07-01 20:40:41 | INFO    | Scan complete.
+2026-07-01 20:47:37 | INFO    | 
+2026-07-01 20:47:37 | INFO    | ============================================================
+2026-07-01 20:47:37 | INFO    |   SESSION START: list_usb.py
+2026-07-01 20:47:37 | INFO    |   Time: 2026-07-01T20:47:37.000960
+2026-07-01 20:47:37 | INFO    |   Python: 3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]
+2026-07-01 20:47:37 | INFO    |   Platform: win32
+2026-07-01 20:47:37 | INFO    |   Working Dir: D:\workplace\ColorManagementApp\poc-rgb-test
+2026-07-01 20:47:37 | INFO    | ============================================================
+2026-07-01 20:47:37 | INFO    | 
+2026-07-01 20:47:38 | INFO    | USB devices:
+Status  InstanceId                                                   FriendlyName                                                   
+------  ----------                                                   ------------                                                   
+OK      USB\VID_05E3&PID_0608\5&CC3F949&0&13                         Generic USB Hub                                                
+OK      USB\VID_1532&PID_0098\5&CC3F949&0&6                          USB Composite Device                                           
+Unknown USB\VID_1A2C&PID_4081\5&CC3F949&0&5                          USB Composite Device                                           
+OK      USB\VID_0B05&PID_19AF\9876543210                             USB Composite Device                                           
+OK      USB\VID_258A&PID_002A\5&CC3F949&0&4                          USB Composite Device                                           
+OK      PCI\VEN_8086&DEV_7A60&SUBSYS_88821043&REV_11\3&11583659&0&A0 Intel(R) USB 3.20 eXtensible Host Controller - 1.20 (Microsoft)
+OK      USB\ROOT_HUB30\4&2FD48294&0&0                                USB Root Hub (USB 3.0)
+2026-07-01 20:47:39 | INFO    | HID devices:
+Status  InstanceId                                             FriendlyName                         
+------  ----------                                             ------------                         
+OK      USB\VID_0B05&PID_19AF&MI_02\6&DE2EAF5&0&0002           USB Input Device                     
+OK      HID\VID_258A&PID_002A&MI_01&COL02\7&1A8C84C6&0&0001    HID-compliant consumer control device
+OK      HID\VID_1532&PID_0098&MI_00&COL03\8&1DD9A299&0&0000    HID-compliant consumer control device
+OK      HID\VID_258A&PID_002A&MI_01&COL03\7&1A8C84C6&0&0002    HID-compliant vendor-defined device  
+Unknown USB\VID_1A2C&PID_4081&MI_00\6&12D54631&0&0000          USB Input Device                     
+OK      USB\VID_1532&PID_0098&MI_00\6&3494E1B4&0&0000          USB Input Device                     
+OK      USB\VID_258A&PID_002A&MI_00\6&28D220C3&0&0000          USB Input Device                     
+OK      HID\VID_0B05&PID_19AF&MI_02\7&382C88B3&0&0000          HID-compliant vendor-defined device  
+Unknown USB\VID_1A2C&PID_4081&MI_01\6&12D54631&0&0001          USB Input Device                     
+OK      USB\VID_1532&PID_0098&MI_01\6&3494E1B4&0&0001          USB Input Device                     
+Unknown HID\VID_1A2C&PID_4081&MI_01&COL03\7&CF8EE2C&0&0002     HID-compliant vendor-defined device  
+OK      USB\VID_258A&PID_002A&MI_01\6&28D220C3&0&0001          USB Input Device                     
+Unknown HID\VID_1A2C&PID_4081&MI_01&COL02\7&CF8EE2C&0&0001     HID-compliant system controller      
+Unknown HID\VID_1A2C&PID_4081&MI_01&COL01\7&CF8EE2C&0&0000     HID-compliant consumer control device
+OK      HID\VID_1532&PID_0098&MI_01&COL05\7&C431F81&0&0004     HID-compliant device                 
+OK      HID\VID_1532&PID_0098&MI_01&COL04\7&C431F81&0&0003     HID-compliant device                 
+OK      RZVIRTUAL\VID_1532&PID_0098&MI_00&COL03\7&C431F81&0&01 HID-compliant consumer control device
+OK      HID\VID_1532&PID_0098&MI_01&COL03\7&C431F81&0&0002     HID-compliant system controller      
+OK      USB\VID_1532&PID_0098&MI_02\6&3494E1B4&0&0002          Razer DeathAdder Essential           
+OK      HID\VID_1532&PID_0098&MI_01&COL02\7&C431F81&0&0001     HID-compliant consumer control device
+OK      HID\VID_258A&PID_002A&MI_01&COL01\7&1A8C84C6&0&0000    HID-compliant system controller
+2026-07-01 20:47:41 | INFO    | Unknown devices:
+Status InstanceId   FriendlyName
+------ ----------   ------------
+OK     HTREE\ROOT\0
+2026-07-01 20:47:42 | INFO    | Colorful/iGame search:
+
+2026-07-01 20:47:43 | INFO    | VID/PID pairs:
+USB\VID_05E3&PID_0608\5&CC3F949&0&13
+USB\VID_1532&PID_0098\5&CC3F949&0&6
+USB\VID_1A2C&PID_4081\5&CC3F949&0&5
+USB\VID_0B05&PID_19AF\9876543210
+USB\VID_258A&PID_002A\5&CC3F949&0&4

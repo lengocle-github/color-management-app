@@ -1,0 +1,276 @@
+2026-07-01 20:40:36 | INFO    | 
+2026-07-01 20:40:36 | INFO    | ============================================================
+2026-07-01 20:40:36 | INFO    |   SESSION START: scan_port3.py
+2026-07-01 20:40:36 | INFO    |   Time: 2026-07-01T20:40:36.746005
+2026-07-01 20:40:36 | INFO    |   Python: 3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]
+2026-07-01 20:40:36 | INFO    |   Platform: win32
+2026-07-01 20:40:36 | INFO    |   Working Dir: D:\workplace\ColorManagementApp\poc-rgb-test
+2026-07-01 20:40:36 | INFO    | ============================================================
+2026-07-01 20:40:36 | INFO    | 
+2026-07-01 20:40:36 | DEBUG   | Loaded NvAPI from: C:\WINDOWS\System32\nvapi64.dll
+2026-07-01 20:40:36 | DEBUG   | [OK] NvAPI_Initialize → NVAPI_OK 
+2026-07-01 20:40:36 | DEBUG   | [OK] NvAPI_EnumPhysicalGPUs → NVAPI_OK count=1
+2026-07-01 20:40:36 | INFO    | ==================================================
+2026-07-01 20:40:36 | INFO    | STEP 1: Verify Port 3 devices...
+2026-07-01 20:40:36 | INFO    | ==================================================
+2026-07-01 20:40:36 | DEBUG   |   0x34 no response (status=-1)
+2026-07-01 20:40:36 | DEBUG   |   0x35 no response (status=-1)
+2026-07-01 20:40:36 | DEBUG   |   0x36 no response (status=-1)
+2026-07-01 20:40:36 | INFO    |   0x37 responds: reg[0x00]=0x42
+2026-07-01 20:40:36 | DEBUG   |   0x38 no response (status=-1)
+2026-07-01 20:40:36 | DEBUG   |   0x39 no response (status=-1)
+2026-07-01 20:40:36 | INFO    |   0x3A responds: reg[0x00]=0x00
+2026-07-01 20:40:36 | DEBUG   |   0x3B no response (status=-1)
+2026-07-01 20:40:36 | DEBUG   |   0x3C no response (status=-1)
+2026-07-01 20:40:36 | DEBUG   |   0x48 no response (status=-1)
+2026-07-01 20:40:36 | DEBUG   |   0x49 no response (status=-1)
+2026-07-01 20:40:36 | INFO    |   0x4A responds: reg[0x00]=0x00
+2026-07-01 20:40:36 | INFO    |   0x4B responds: reg[0x00]=0x00
+2026-07-01 20:40:36 | DEBUG   |   0x4C no response (status=-1)
+2026-07-01 20:40:36 | DEBUG   |   0x4D no response (status=-1)
+2026-07-01 20:40:36 | DEBUG   |   0x4E no response (status=-1)
+2026-07-01 20:40:36 | DEBUG   |   0x4F no response (status=-1)
+2026-07-01 20:40:36 | INFO    |   0x50 responds: reg[0x00]=0x00
+2026-07-01 20:40:36 | DEBUG   |   0x51 no response (status=-1)
+2026-07-01 20:40:36 | DEBUG   |   0x52 no response (status=-1)
+2026-07-01 20:40:36 | DEBUG   |   0x53 no response (status=-1)
+2026-07-01 20:40:36 | INFO    |   0x54 responds: reg[0x00]=0x03
+2026-07-01 20:40:36 | DEBUG   |   0x55 no response (status=-1)
+2026-07-01 20:40:36 | DEBUG   |   0x56 no response (status=-1)
+2026-07-01 20:40:36 | DEBUG   |   0x57 no response (status=-1)
+2026-07-01 20:40:36 | DEBUG   |   0x58 no response (status=-1)
+2026-07-01 20:40:36 | INFO    | ==================================================
+2026-07-01 20:40:36 | INFO    | STEP 2: Register dump for each device...
+2026-07-01 20:40:36 | INFO    | ==================================================
+2026-07-01 20:40:36 | INFO    |   --- Device 0x37 register dump ---
+2026-07-01 20:40:36 | INFO    |     Multi-read 0x00-0x0F: 02 AC 08 94 E4 33 55 C8 14 50 1E 08 0A 76 C2 8F
+2026-07-01 20:40:36 | INFO    |     Different values detected — real device
+2026-07-01 20:40:37 | INFO    |     Individual reads: 33 OK, 30 unique values
+2026-07-01 20:40:37 | INFO    |     Reg 0x01 = 0xA2 (different!)
+2026-07-01 20:40:37 | INFO    |     Reg 0x02 = 0x30 (different!)
+2026-07-01 20:40:37 | INFO    |     Reg 0x03 = 0x62 (different!)
+2026-07-01 20:40:37 | INFO    |     Reg 0x04 = 0x84 (different!)
+2026-07-01 20:40:37 | INFO    |     Reg 0x05 = 0x8C (different!)
+2026-07-01 20:40:37 | INFO    |     Reg 0x06 = 0x40 (different!)
+2026-07-01 20:40:37 | INFO    |     Reg 0x07 = 0x10 (different!)
+2026-07-01 20:40:37 | INFO    |     Reg 0x08 = 0xAD (different!)
+2026-07-01 20:40:37 | INFO    |     Reg 0x09 = 0x24 (different!)
+2026-07-01 20:40:37 | INFO    |     Reg 0x0A = 0x00 (different!)
+2026-07-01 20:40:37 | INFO    |     Reg 0x0B = 0x8C (different!)
+2026-07-01 20:40:37 | INFO    |     Reg 0x0C = 0x18 (different!)
+2026-07-01 20:40:37 | INFO    |     Reg 0x0D = 0xD9 (different!)
+2026-07-01 20:40:37 | INFO    |     Reg 0x0E = 0x44 (different!)
+2026-07-01 20:40:37 | INFO    |     Reg 0x0F = 0x42 (different!)
+2026-07-01 20:40:37 | INFO    |     Reg 0x10 = 0x02 (different!)
+2026-07-01 20:40:37 | INFO    |     Reg 0x11 = 0xAC (different!)
+2026-07-01 20:40:37 | INFO    |     Reg 0x12 = 0x08 (different!)
+2026-07-01 20:40:37 | INFO    |     Reg 0x13 = 0x94 (different!)
+2026-07-01 20:40:37 | INFO    |     Reg 0x14 = 0xE4 (different!)
+2026-07-01 20:40:37 | INFO    |     Reg 0x15 = 0x33 (different!)
+2026-07-01 20:40:37 | INFO    |     Reg 0x16 = 0x55 (different!)
+2026-07-01 20:40:37 | INFO    |     Reg 0x17 = 0xC8 (different!)
+2026-07-01 20:40:37 | INFO    |     Reg 0x18 = 0x14 (different!)
+2026-07-01 20:40:37 | INFO    |     Reg 0x19 = 0x50 (different!)
+2026-07-01 20:40:37 | INFO    |     Reg 0x1A = 0x1E (different!)
+2026-07-01 20:40:37 | INFO    |     Reg 0x1B = 0x08 (different!)
+2026-07-01 20:40:37 | INFO    |     Reg 0x1C = 0x0A (different!)
+2026-07-01 20:40:37 | INFO    |     Reg 0x1D = 0x76 (different!)
+2026-07-01 20:40:37 | INFO    |     Reg 0x1E = 0xC2 (different!)
+2026-07-01 20:40:37 | INFO    |     Reg 0x1F = 0x8F (different!)
+2026-07-01 20:40:37 | INFO    |   --- Device 0x3A register dump ---
+2026-07-01 20:40:37 | INFO    |     Multi-read 0x00-0x0F: 00 00 00 00 00 00 00 00 98 EA 5B B6 30 00 00 00
+2026-07-01 20:40:37 | INFO    |     Different values detected — real device
+2026-07-01 20:40:37 | INFO    |     Individual reads: 33 OK, 1 unique values
+2026-07-01 20:40:37 | INFO    |   --- Device 0x4A register dump ---
+2026-07-01 20:40:37 | INFO    |     Multi-read 0x00-0x0F: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+2026-07-01 20:40:37 | WARNING |     All same value — likely dummy/bus artifact
+2026-07-01 20:40:37 | INFO    |     Individual reads: 33 OK, 1 unique values
+2026-07-01 20:40:37 | INFO    |   --- Device 0x4B register dump ---
+2026-07-01 20:40:37 | INFO    |     Multi-read 0x00-0x0F: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+2026-07-01 20:40:37 | WARNING |     All same value — likely dummy/bus artifact
+2026-07-01 20:40:37 | INFO    |     Individual reads: 33 OK, 1 unique values
+2026-07-01 20:40:37 | INFO    |   --- Device 0x50 register dump ---
+2026-07-01 20:40:38 | INFO    |     Multi-read 0x00-0x0F: 06 B3 6C 27 01 01 01 01 0E 1F 01 03 80 3C 22 78
+2026-07-01 20:40:38 | INFO    |     Different values detected — real device
+2026-07-01 20:40:38 | INFO    |     Individual reads: 33 OK, 25 unique values
+2026-07-01 20:40:38 | INFO    |     Reg 0x01 = 0xE4 (different!)
+2026-07-01 20:40:38 | INFO    |     Reg 0x02 = 0xA5 (different!)
+2026-07-01 20:40:38 | INFO    |     Reg 0x03 = 0xA6 (different!)
+2026-07-01 20:40:38 | INFO    |     Reg 0x04 = 0x54 (different!)
+2026-07-01 20:40:38 | INFO    |     Reg 0x05 = 0x4C (different!)
+2026-07-01 20:40:38 | INFO    |     Reg 0x06 = 0x9E (different!)
+2026-07-01 20:40:38 | INFO    |     Reg 0x07 = 0x26 (different!)
+2026-07-01 20:40:38 | INFO    |     Reg 0x08 = 0x0D (different!)
+2026-07-01 20:40:38 | INFO    |     Reg 0x09 = 0x50 (different!)
+2026-07-01 20:40:38 | INFO    |     Reg 0x0A = 0x54 (different!)
+2026-07-01 20:40:38 | INFO    |     Reg 0x0B = 0xBF (different!)
+2026-07-01 20:40:38 | INFO    |     Reg 0x0C = 0x4F (different!)
+2026-07-01 20:40:38 | INFO    |     Reg 0x0D = 0x00 (different!)
+2026-07-01 20:40:38 | INFO    |     Reg 0x0E = 0x71 (different!)
+2026-07-01 20:40:38 | INFO    |     Reg 0x0F = 0x4F (different!)
+2026-07-01 20:40:38 | INFO    |     Reg 0x10 = 0x81 (different!)
+2026-07-01 20:40:38 | INFO    |     Reg 0x11 = 0x80 (different!)
+2026-07-01 20:40:38 | INFO    |     Reg 0x12 = 0x81 (different!)
+2026-07-01 20:40:38 | INFO    |     Reg 0x13 = 0x40 (different!)
+2026-07-01 20:40:38 | INFO    |     Reg 0x14 = 0x95 (different!)
+2026-07-01 20:40:38 | INFO    |     Reg 0x15 = 0x00 (different!)
+2026-07-01 20:40:38 | INFO    |     Reg 0x16 = 0xA9 (different!)
+2026-07-01 20:40:38 | INFO    |     Reg 0x17 = 0x40 (different!)
+2026-07-01 20:40:38 | INFO    |     Reg 0x18 = 0xB3 (different!)
+2026-07-01 20:40:38 | INFO    |     Reg 0x19 = 0x00 (different!)
+2026-07-01 20:40:38 | INFO    |     Reg 0x1A = 0xD1 (different!)
+2026-07-01 20:40:38 | INFO    |     Reg 0x1B = 0x00 (different!)
+2026-07-01 20:40:38 | INFO    |     Reg 0x1C = 0xE1 (different!)
+2026-07-01 20:40:38 | INFO    |     Reg 0x1D = 0xC0 (different!)
+2026-07-01 20:40:38 | INFO    |     Reg 0x1E = 0x56 (different!)
+2026-07-01 20:40:38 | INFO    |     Reg 0x1F = 0x5E (different!)
+2026-07-01 20:40:38 | INFO    |     Reg 0x20 = 0x00 (different!)
+2026-07-01 20:40:38 | INFO    |   --- Device 0x54 register dump ---
+2026-07-01 20:40:38 | INFO    |     Multi-read 0x00-0x0F: 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+2026-07-01 20:40:38 | INFO    |     Different values detected — real device
+2026-07-01 20:40:38 | INFO    |     Individual reads: 33 OK, 1 unique values
+2026-07-01 20:40:38 | INFO    | ==================================================
+2026-07-01 20:40:38 | INFO    | STEP 3: Try color writes on Port 3 devices...
+2026-07-01 20:40:38 | INFO    | ==================================================
+2026-07-01 20:40:38 | INFO    |   --- Writing color to 0x37 ---
+2026-07-01 20:40:38 | DEBUG   | WRITE 0x37 port=3 reg=[0x00] data=[0x00 0x66 0xFF] → status=0
+2026-07-01 20:40:38 | INFO    |     Direct RGB @0x00 → status=0
+2026-07-01 20:40:38 | DEBUG   | WRITE 0x37 port=3 reg=[0x01] data=[0x01 0x00 0x66 0xFF] → status=0
+2026-07-01 20:40:38 | INFO    |     Mode+RGB @0x01 → status=0
+2026-07-01 20:40:38 | DEBUG   | WRITE 0x37 port=3 reg=[0x04] data=[0x00 0x00 0x66 0xFF 0xFF] → status=0
+2026-07-01 20:40:38 | INFO    |     Colorful @0x04 → status=0
+2026-07-01 20:40:38 | DEBUG   | WRITE 0x37 port=3 reg=[0x01] data=[0x00] → status=0
+2026-07-01 20:40:38 | DEBUG   | WRITE 0x37 port=3 reg=[0x02] data=[0x66] → status=0
+2026-07-01 20:40:38 | DEBUG   | WRITE 0x37 port=3 reg=[0x03] data=[0xFF] → status=0
+2026-07-01 20:40:38 | INFO    |     Separate R/G/B @0x01-0x03 → R=0 G=0 B=0
+2026-07-01 20:40:38 | DEBUG   | WRITE 0x37 port=3 reg=[0xE0] data=[0x35 0x01 0x00 0x66 0xFF] → status=0
+2026-07-01 20:40:38 | INFO    |     CMD packet @0xE0 → status=0
+2026-07-01 20:40:38 | DEBUG   | WRITE 0x37 port=3 reg=[0x00] data=[0x01 0x01 0x00 0x66 0xFF 0xFF 0x00] → status=0
+2026-07-01 20:40:38 | INFO    |     Full @0x00 long → status=0
+2026-07-01 20:40:38 | DEBUG   | WRITE 0x37 port=3 reg=[0x10] data=[0x00 0x66 0xFF] → status=0
+2026-07-01 20:40:38 | INFO    |     Reg 0x10 RGB → status=0
+2026-07-01 20:40:38 | DEBUG   | WRITE 0x37 port=3 reg=[0x80] data=[0x01 0x00 0x66 0xFF] → status=0
+2026-07-01 20:40:38 | INFO    |     Colorful v2 @0x80 → status=0
+2026-07-01 20:40:39 | DEBUG   | WRITE 0x37 port=3 reg=[0xFF] data=[0x01] → status=0
+2026-07-01 20:40:39 | INFO    |     Apply @0xFF → status=0
+2026-07-01 20:40:39 | INFO    |     Post-write: 0x80 (CHANGED!)
+2026-07-01 20:40:39 | INFO    |   --- Writing color to 0x3A ---
+2026-07-01 20:40:39 | DEBUG   | WRITE 0x3A port=3 reg=[0x00] data=[0x00 0x66 0xFF] → status=0
+2026-07-01 20:40:39 | INFO    |     Direct RGB @0x00 → status=0
+2026-07-01 20:40:39 | DEBUG   | WRITE 0x3A port=3 reg=[0x01] data=[0x01 0x00 0x66 0xFF] → status=0
+2026-07-01 20:40:39 | INFO    |     Mode+RGB @0x01 → status=0
+2026-07-01 20:40:39 | DEBUG   | WRITE 0x3A port=3 reg=[0x04] data=[0x00 0x00 0x66 0xFF 0xFF] → status=0
+2026-07-01 20:40:39 | INFO    |     Colorful @0x04 → status=0
+2026-07-01 20:40:39 | DEBUG   | WRITE 0x3A port=3 reg=[0x01] data=[0x00] → status=0
+2026-07-01 20:40:39 | DEBUG   | WRITE 0x3A port=3 reg=[0x02] data=[0x66] → status=0
+2026-07-01 20:40:39 | DEBUG   | WRITE 0x3A port=3 reg=[0x03] data=[0xFF] → status=0
+2026-07-01 20:40:39 | INFO    |     Separate R/G/B @0x01-0x03 → R=0 G=0 B=0
+2026-07-01 20:40:39 | DEBUG   | WRITE 0x3A port=3 reg=[0xE0] data=[0x35 0x01 0x00 0x66 0xFF] → status=0
+2026-07-01 20:40:39 | INFO    |     CMD packet @0xE0 → status=0
+2026-07-01 20:40:39 | DEBUG   | WRITE 0x3A port=3 reg=[0x00] data=[0x01 0x01 0x00 0x66 0xFF 0xFF 0x00] → status=0
+2026-07-01 20:40:39 | INFO    |     Full @0x00 long → status=0
+2026-07-01 20:40:39 | DEBUG   | WRITE 0x3A port=3 reg=[0x10] data=[0x00 0x66 0xFF] → status=0
+2026-07-01 20:40:39 | INFO    |     Reg 0x10 RGB → status=0
+2026-07-01 20:40:39 | DEBUG   | WRITE 0x3A port=3 reg=[0x80] data=[0x01 0x00 0x66 0xFF] → status=0
+2026-07-01 20:40:39 | INFO    |     Colorful v2 @0x80 → status=0
+2026-07-01 20:40:39 | DEBUG   | WRITE 0x3A port=3 reg=[0xFF] data=[0x01] → status=0
+2026-07-01 20:40:39 | INFO    |     Apply @0xFF → status=0
+2026-07-01 20:40:39 | INFO    |     Post-write: 0x00 (unchanged)
+2026-07-01 20:40:39 | INFO    |   --- Writing color to 0x4A ---
+2026-07-01 20:40:39 | DEBUG   | WRITE 0x4A port=3 reg=[0x00] data=[0x00 0x66 0xFF] → status=0
+2026-07-01 20:40:39 | INFO    |     Direct RGB @0x00 → status=0
+2026-07-01 20:40:39 | DEBUG   | WRITE 0x4A port=3 reg=[0x01] data=[0x01 0x00 0x66 0xFF] → status=0
+2026-07-01 20:40:39 | INFO    |     Mode+RGB @0x01 → status=0
+2026-07-01 20:40:39 | DEBUG   | WRITE 0x4A port=3 reg=[0x04] data=[0x00 0x00 0x66 0xFF 0xFF] → status=0
+2026-07-01 20:40:39 | INFO    |     Colorful @0x04 → status=0
+2026-07-01 20:40:39 | DEBUG   | WRITE 0x4A port=3 reg=[0x01] data=[0x00] → status=0
+2026-07-01 20:40:39 | DEBUG   | WRITE 0x4A port=3 reg=[0x02] data=[0x66] → status=0
+2026-07-01 20:40:39 | DEBUG   | WRITE 0x4A port=3 reg=[0x03] data=[0xFF] → status=0
+2026-07-01 20:40:39 | INFO    |     Separate R/G/B @0x01-0x03 → R=0 G=0 B=0
+2026-07-01 20:40:39 | DEBUG   | WRITE 0x4A port=3 reg=[0xE0] data=[0x35 0x01 0x00 0x66 0xFF] → status=0
+2026-07-01 20:40:39 | INFO    |     CMD packet @0xE0 → status=0
+2026-07-01 20:40:39 | DEBUG   | WRITE 0x4A port=3 reg=[0x00] data=[0x01 0x01 0x00 0x66 0xFF 0xFF 0x00] → status=0
+2026-07-01 20:40:39 | INFO    |     Full @0x00 long → status=0
+2026-07-01 20:40:39 | DEBUG   | WRITE 0x4A port=3 reg=[0x10] data=[0x00 0x66 0xFF] → status=0
+2026-07-01 20:40:39 | INFO    |     Reg 0x10 RGB → status=0
+2026-07-01 20:40:40 | DEBUG   | WRITE 0x4A port=3 reg=[0x80] data=[0x01 0x00 0x66 0xFF] → status=0
+2026-07-01 20:40:40 | INFO    |     Colorful v2 @0x80 → status=0
+2026-07-01 20:40:40 | DEBUG   | WRITE 0x4A port=3 reg=[0xFF] data=[0x01] → status=0
+2026-07-01 20:40:40 | INFO    |     Apply @0xFF → status=0
+2026-07-01 20:40:40 | INFO    |     Post-write: 0x00 (unchanged)
+2026-07-01 20:40:40 | INFO    |   --- Writing color to 0x4B ---
+2026-07-01 20:40:40 | DEBUG   | WRITE 0x4B port=3 reg=[0x00] data=[0x00 0x66 0xFF] → status=0
+2026-07-01 20:40:40 | INFO    |     Direct RGB @0x00 → status=0
+2026-07-01 20:40:40 | DEBUG   | WRITE 0x4B port=3 reg=[0x01] data=[0x01 0x00 0x66 0xFF] → status=0
+2026-07-01 20:40:40 | INFO    |     Mode+RGB @0x01 → status=0
+2026-07-01 20:40:40 | DEBUG   | WRITE 0x4B port=3 reg=[0x04] data=[0x00 0x00 0x66 0xFF 0xFF] → status=0
+2026-07-01 20:40:40 | INFO    |     Colorful @0x04 → status=0
+2026-07-01 20:40:40 | DEBUG   | WRITE 0x4B port=3 reg=[0x01] data=[0x00] → status=0
+2026-07-01 20:40:40 | DEBUG   | WRITE 0x4B port=3 reg=[0x02] data=[0x66] → status=0
+2026-07-01 20:40:40 | DEBUG   | WRITE 0x4B port=3 reg=[0x03] data=[0xFF] → status=0
+2026-07-01 20:40:40 | INFO    |     Separate R/G/B @0x01-0x03 → R=0 G=0 B=0
+2026-07-01 20:40:40 | DEBUG   | WRITE 0x4B port=3 reg=[0xE0] data=[0x35 0x01 0x00 0x66 0xFF] → status=0
+2026-07-01 20:40:40 | INFO    |     CMD packet @0xE0 → status=0
+2026-07-01 20:40:40 | DEBUG   | WRITE 0x4B port=3 reg=[0x00] data=[0x01 0x01 0x00 0x66 0xFF 0xFF 0x00] → status=0
+2026-07-01 20:40:40 | INFO    |     Full @0x00 long → status=0
+2026-07-01 20:40:40 | DEBUG   | WRITE 0x4B port=3 reg=[0x10] data=[0x00 0x66 0xFF] → status=0
+2026-07-01 20:40:40 | INFO    |     Reg 0x10 RGB → status=0
+2026-07-01 20:40:40 | DEBUG   | WRITE 0x4B port=3 reg=[0x80] data=[0x01 0x00 0x66 0xFF] → status=0
+2026-07-01 20:40:40 | INFO    |     Colorful v2 @0x80 → status=0
+2026-07-01 20:40:40 | DEBUG   | WRITE 0x4B port=3 reg=[0xFF] data=[0x01] → status=0
+2026-07-01 20:40:40 | INFO    |     Apply @0xFF → status=0
+2026-07-01 20:40:40 | INFO    |     Post-write: 0x00 (unchanged)
+2026-07-01 20:40:40 | INFO    |   --- Writing color to 0x50 ---
+2026-07-01 20:40:40 | DEBUG   | WRITE 0x50 port=3 reg=[0x00] data=[0x00 0x66 0xFF] → status=0
+2026-07-01 20:40:40 | INFO    |     Direct RGB @0x00 → status=0
+2026-07-01 20:40:40 | DEBUG   | WRITE 0x50 port=3 reg=[0x01] data=[0x01 0x00 0x66 0xFF] → status=0
+2026-07-01 20:40:40 | INFO    |     Mode+RGB @0x01 → status=0
+2026-07-01 20:40:40 | DEBUG   | WRITE 0x50 port=3 reg=[0x04] data=[0x00 0x00 0x66 0xFF 0xFF] → status=0
+2026-07-01 20:40:40 | INFO    |     Colorful @0x04 → status=0
+2026-07-01 20:40:40 | DEBUG   | WRITE 0x50 port=3 reg=[0x01] data=[0x00] → status=0
+2026-07-01 20:40:40 | DEBUG   | WRITE 0x50 port=3 reg=[0x02] data=[0x66] → status=-1
+2026-07-01 20:40:40 | DEBUG   | WRITE 0x50 port=3 reg=[0x03] data=[0xFF] → status=0
+2026-07-01 20:40:40 | INFO    |     Separate R/G/B @0x01-0x03 → R=0 G=-1 B=0
+2026-07-01 20:40:40 | DEBUG   | WRITE 0x50 port=3 reg=[0xE0] data=[0x35 0x01 0x00 0x66 0xFF] → status=0
+2026-07-01 20:40:40 | INFO    |     CMD packet @0xE0 → status=0
+2026-07-01 20:40:41 | DEBUG   | WRITE 0x50 port=3 reg=[0x00] data=[0x01 0x01 0x00 0x66 0xFF 0xFF 0x00] → status=0
+2026-07-01 20:40:41 | INFO    |     Full @0x00 long → status=0
+2026-07-01 20:40:41 | DEBUG   | WRITE 0x50 port=3 reg=[0x10] data=[0x00 0x66 0xFF] → status=0
+2026-07-01 20:40:41 | INFO    |     Reg 0x10 RGB → status=0
+2026-07-01 20:40:41 | DEBUG   | WRITE 0x50 port=3 reg=[0x80] data=[0x01 0x00 0x66 0xFF] → status=0
+2026-07-01 20:40:41 | INFO    |     Colorful v2 @0x80 → status=0
+2026-07-01 20:40:41 | DEBUG   | WRITE 0x50 port=3 reg=[0xFF] data=[0x01] → status=0
+2026-07-01 20:40:41 | INFO    |     Apply @0xFF → status=0
+2026-07-01 20:40:41 | INFO    |     Post-write: 0x01 (CHANGED!)
+2026-07-01 20:40:41 | INFO    |   --- Writing color to 0x54 ---
+2026-07-01 20:40:41 | DEBUG   | WRITE 0x54 port=3 reg=[0x00] data=[0x00 0x66 0xFF] → status=0
+2026-07-01 20:40:41 | INFO    |     Direct RGB @0x00 → status=0
+2026-07-01 20:40:41 | DEBUG   | WRITE 0x54 port=3 reg=[0x01] data=[0x01 0x00 0x66 0xFF] → status=0
+2026-07-01 20:40:41 | INFO    |     Mode+RGB @0x01 → status=0
+2026-07-01 20:40:41 | DEBUG   | WRITE 0x54 port=3 reg=[0x04] data=[0x00 0x00 0x66 0xFF 0xFF] → status=0
+2026-07-01 20:40:41 | INFO    |     Colorful @0x04 → status=0
+2026-07-01 20:40:41 | DEBUG   | WRITE 0x54 port=3 reg=[0x01] data=[0x00] → status=0
+2026-07-01 20:40:41 | DEBUG   | WRITE 0x54 port=3 reg=[0x02] data=[0x66] → status=0
+2026-07-01 20:40:41 | DEBUG   | WRITE 0x54 port=3 reg=[0x03] data=[0xFF] → status=0
+2026-07-01 20:40:41 | INFO    |     Separate R/G/B @0x01-0x03 → R=0 G=0 B=0
+2026-07-01 20:40:41 | DEBUG   | WRITE 0x54 port=3 reg=[0xE0] data=[0x35 0x01 0x00 0x66 0xFF] → status=0
+2026-07-01 20:40:41 | INFO    |     CMD packet @0xE0 → status=0
+2026-07-01 20:40:41 | DEBUG   | WRITE 0x54 port=3 reg=[0x00] data=[0x01 0x01 0x00 0x66 0xFF 0xFF 0x00] → status=0
+2026-07-01 20:40:41 | INFO    |     Full @0x00 long → status=0
+2026-07-01 20:40:41 | DEBUG   | WRITE 0x54 port=3 reg=[0x10] data=[0x00 0x66 0xFF] → status=0
+2026-07-01 20:40:41 | INFO    |     Reg 0x10 RGB → status=0
+2026-07-01 20:40:41 | DEBUG   | WRITE 0x54 port=3 reg=[0x80] data=[0x01 0x00 0x66 0xFF] → status=0
+2026-07-01 20:40:41 | INFO    |     Colorful v2 @0x80 → status=0
+2026-07-01 20:40:41 | DEBUG   | WRITE 0x54 port=3 reg=[0xFF] data=[0x01] → status=0
+2026-07-01 20:40:41 | INFO    |     Apply @0xFF → status=0
+2026-07-01 20:40:41 | INFO    |     Post-write: 0x03 (unchanged)
+2026-07-01 20:40:41 | INFO    | ==================================================
+2026-07-01 20:40:41 | INFO    | STEP 4: Full scan Port 3 (0x08-0x77)...
+2026-07-01 20:40:41 | INFO    | ==================================================
+2026-07-01 20:40:41 | INFO    |   Full scan: 0x37 = 0xBE
+2026-07-01 20:40:41 | INFO    |   Full scan: 0x3A = 0x00
+2026-07-01 20:40:41 | INFO    |   Full scan: 0x4A = 0x00
+2026-07-01 20:40:41 | INFO    |   Full scan: 0x4B = 0x00
+2026-07-01 20:40:41 | INFO    |   Full scan: 0x50 = 0x01
+2026-07-01 20:40:41 | INFO    |   Full scan: 0x54 = 0x03
+2026-07-01 20:40:41 | INFO    | Scan complete.

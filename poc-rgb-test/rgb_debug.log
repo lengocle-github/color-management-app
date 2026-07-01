@@ -1411,3 +1411,231 @@
 2026-07-01 20:28:35 | INFO    |   FOUND! Speed=400KHz, Port=1: [('0x61', 'data=0xAA')]
 2026-07-01 20:28:36 | INFO    |   FOUND! Speed=400KHz, Port=3: [('0x37', 'data=0x44'), ('0x3A', 'data=0x00'), ('0x4A', 'data=0x00'), ('0x4B', 'data=0x00'), ('0x50', 'data=0xFF'), ('0x54', 'data=0x03')]
 2026-07-01 20:28:40 | INFO    | Scan complete. found_any=True
+2026-07-01 20:36:14 | INFO    | 
+2026-07-01 20:36:14 | INFO    | ============================================================
+2026-07-01 20:36:14 | INFO    |   SESSION START: set_blue_targeted.py
+2026-07-01 20:36:14 | INFO    |   Time: 2026-07-01T20:36:14.557947
+2026-07-01 20:36:14 | INFO    |   Python: 3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]
+2026-07-01 20:36:14 | INFO    |   Platform: win32
+2026-07-01 20:36:14 | INFO    |   Working Dir: D:\workplace\ColorManagementApp\poc-rgb-test
+2026-07-01 20:36:14 | INFO    | ============================================================
+2026-07-01 20:36:14 | INFO    | 
+2026-07-01 20:36:14 | INFO    | Target device: addr=0x61, port=1
+2026-07-01 20:36:14 | INFO    | Target color: R=0 G=102 B=255
+2026-07-01 20:36:14 | DEBUG   | Loaded NvAPI from: C:\WINDOWS\System32\nvapi64.dll
+2026-07-01 20:36:14 | DEBUG   | [OK] NvAPI_Initialize → NVAPI_OK 
+2026-07-01 20:36:14 | DEBUG   | [OK] NvAPI_EnumPhysicalGPUs → NVAPI_OK count=1
+2026-07-01 20:36:14 | INFO    | ==================================================
+2026-07-01 20:36:14 | INFO    | STEP 1: Probing device at 0x61, Port 1...
+2026-07-01 20:36:14 | INFO    | ==================================================
+2026-07-01 20:36:14 | DEBUG   | READ  addr=0x61 port=1 reg=[0x00] → [0xAA] status=OK
+2026-07-01 20:36:14 | INFO    |   ✅ Device responds! Read byte: 0xAA
+2026-07-01 20:36:14 | INFO    | ==================================================
+2026-07-01 20:36:14 | INFO    | STEP 2: Dumping registers 0x00-0x20...
+2026-07-01 20:36:14 | INFO    | ==================================================
+2026-07-01 20:36:14 | DEBUG   | READ  addr=0x61 port=1 reg=[0x00] → [0xAA] status=OK
+2026-07-01 20:36:14 | INFO    |   Reg 0x00 = 0xAA (170)
+2026-07-01 20:36:14 | DEBUG   | READ  addr=0x61 port=1 reg=[0x01] → [0xAA] status=OK
+2026-07-01 20:36:14 | INFO    |   Reg 0x01 = 0xAA (170)
+2026-07-01 20:36:14 | DEBUG   | READ  addr=0x61 port=1 reg=[0x02] → [0xAA] status=OK
+2026-07-01 20:36:14 | INFO    |   Reg 0x02 = 0xAA (170)
+2026-07-01 20:36:14 | DEBUG   | READ  addr=0x61 port=1 reg=[0x03] → [0xAA] status=OK
+2026-07-01 20:36:14 | INFO    |   Reg 0x03 = 0xAA (170)
+2026-07-01 20:36:14 | DEBUG   | READ  addr=0x61 port=1 reg=[0x04] → [0xAA] status=OK
+2026-07-01 20:36:14 | INFO    |   Reg 0x04 = 0xAA (170)
+2026-07-01 20:36:14 | DEBUG   | READ  addr=0x61 port=1 reg=[0x05] → [0xAA] status=OK
+2026-07-01 20:36:14 | INFO    |   Reg 0x05 = 0xAA (170)
+2026-07-01 20:36:14 | DEBUG   | READ  addr=0x61 port=1 reg=[0x06] → [0xAA] status=OK
+2026-07-01 20:36:14 | INFO    |   Reg 0x06 = 0xAA (170)
+2026-07-01 20:36:14 | DEBUG   | READ  addr=0x61 port=1 reg=[0x07] → [0xAA] status=OK
+2026-07-01 20:36:14 | INFO    |   Reg 0x07 = 0xAA (170)
+2026-07-01 20:36:14 | DEBUG   | READ  addr=0x61 port=1 reg=[0x08] → [0xAA] status=OK
+2026-07-01 20:36:14 | INFO    |   Reg 0x08 = 0xAA (170)
+2026-07-01 20:36:14 | DEBUG   | READ  addr=0x61 port=1 reg=[0x09] → [0xAA] status=OK
+2026-07-01 20:36:14 | INFO    |   Reg 0x09 = 0xAA (170)
+2026-07-01 20:36:14 | DEBUG   | READ  addr=0x61 port=1 reg=[0x0A] → [0xAA] status=OK
+2026-07-01 20:36:14 | INFO    |   Reg 0x0A = 0xAA (170)
+2026-07-01 20:36:14 | DEBUG   | READ  addr=0x61 port=1 reg=[0x0B] → [0xAA] status=OK
+2026-07-01 20:36:14 | INFO    |   Reg 0x0B = 0xAA (170)
+2026-07-01 20:36:14 | DEBUG   | READ  addr=0x61 port=1 reg=[0x0C] → [0xAA] status=OK
+2026-07-01 20:36:14 | INFO    |   Reg 0x0C = 0xAA (170)
+2026-07-01 20:36:14 | DEBUG   | READ  addr=0x61 port=1 reg=[0x0D] → [0xAA] status=OK
+2026-07-01 20:36:14 | INFO    |   Reg 0x0D = 0xAA (170)
+2026-07-01 20:36:14 | DEBUG   | READ  addr=0x61 port=1 reg=[0x0E] → [0xAA] status=OK
+2026-07-01 20:36:14 | INFO    |   Reg 0x0E = 0xAA (170)
+2026-07-01 20:36:14 | DEBUG   | READ  addr=0x61 port=1 reg=[0x0F] → [0xAA] status=OK
+2026-07-01 20:36:14 | INFO    |   Reg 0x0F = 0xAA (170)
+2026-07-01 20:36:14 | DEBUG   | READ  addr=0x61 port=1 reg=[0x10] → [0xAA] status=OK
+2026-07-01 20:36:14 | INFO    |   Reg 0x10 = 0xAA (170)
+2026-07-01 20:36:14 | DEBUG   | READ  addr=0x61 port=1 reg=[0x11] → [0xAA] status=OK
+2026-07-01 20:36:14 | INFO    |   Reg 0x11 = 0xAA (170)
+2026-07-01 20:36:14 | DEBUG   | READ  addr=0x61 port=1 reg=[0x12] → [0xAA] status=OK
+2026-07-01 20:36:14 | INFO    |   Reg 0x12 = 0xAA (170)
+2026-07-01 20:36:14 | DEBUG   | READ  addr=0x61 port=1 reg=[0x13] → [0xAA] status=OK
+2026-07-01 20:36:14 | INFO    |   Reg 0x13 = 0xAA (170)
+2026-07-01 20:36:14 | DEBUG   | READ  addr=0x61 port=1 reg=[0x14] → [0xAA] status=OK
+2026-07-01 20:36:14 | INFO    |   Reg 0x14 = 0xAA (170)
+2026-07-01 20:36:14 | DEBUG   | READ  addr=0x61 port=1 reg=[0x15] → [0xAA] status=OK
+2026-07-01 20:36:14 | INFO    |   Reg 0x15 = 0xAA (170)
+2026-07-01 20:36:14 | DEBUG   | READ  addr=0x61 port=1 reg=[0x16] → [0xAA] status=OK
+2026-07-01 20:36:14 | INFO    |   Reg 0x16 = 0xAA (170)
+2026-07-01 20:36:14 | DEBUG   | READ  addr=0x61 port=1 reg=[0x17] → [0xAA] status=OK
+2026-07-01 20:36:14 | INFO    |   Reg 0x17 = 0xAA (170)
+2026-07-01 20:36:14 | DEBUG   | READ  addr=0x61 port=1 reg=[0x18] → [0xAA] status=OK
+2026-07-01 20:36:14 | INFO    |   Reg 0x18 = 0xAA (170)
+2026-07-01 20:36:14 | DEBUG   | READ  addr=0x61 port=1 reg=[0x19] → [0xAA] status=OK
+2026-07-01 20:36:14 | INFO    |   Reg 0x19 = 0xAA (170)
+2026-07-01 20:36:14 | DEBUG   | READ  addr=0x61 port=1 reg=[0x1A] → [0xAA] status=OK
+2026-07-01 20:36:14 | INFO    |   Reg 0x1A = 0xAA (170)
+2026-07-01 20:36:14 | DEBUG   | READ  addr=0x61 port=1 reg=[0x1B] → [0xAA] status=OK
+2026-07-01 20:36:14 | INFO    |   Reg 0x1B = 0xAA (170)
+2026-07-01 20:36:14 | DEBUG   | READ  addr=0x61 port=1 reg=[0x1C] → [0xAA] status=OK
+2026-07-01 20:36:14 | INFO    |   Reg 0x1C = 0xAA (170)
+2026-07-01 20:36:14 | DEBUG   | READ  addr=0x61 port=1 reg=[0x1D] → [0xAA] status=OK
+2026-07-01 20:36:14 | INFO    |   Reg 0x1D = 0xAA (170)
+2026-07-01 20:36:14 | DEBUG   | READ  addr=0x61 port=1 reg=[0x1E] → [0xAA] status=OK
+2026-07-01 20:36:14 | INFO    |   Reg 0x1E = 0xAA (170)
+2026-07-01 20:36:14 | DEBUG   | READ  addr=0x61 port=1 reg=[0x1F] → [0xAA] status=OK
+2026-07-01 20:36:14 | INFO    |   Reg 0x1F = 0xAA (170)
+2026-07-01 20:36:15 | DEBUG   | READ  addr=0x61 port=1 reg=[0x20] → [0xAA] status=OK
+2026-07-01 20:36:15 | INFO    |   Reg 0x20 = 0xAA (170)
+2026-07-01 20:36:15 | INFO    |   Reading extended registers (0x30-0x40, 0x80-0x90)...
+2026-07-01 20:36:15 | DEBUG   | READ  addr=0x61 port=1 reg=[0x30] → [0xAA] status=OK
+2026-07-01 20:36:15 | INFO    |   Reg 0x30 = 0xAA (170)
+2026-07-01 20:36:15 | DEBUG   | READ  addr=0x61 port=1 reg=[0x31] → [0xAA] status=OK
+2026-07-01 20:36:15 | INFO    |   Reg 0x31 = 0xAA (170)
+2026-07-01 20:36:15 | DEBUG   | READ  addr=0x61 port=1 reg=[0x32] → [0xAA] status=OK
+2026-07-01 20:36:15 | INFO    |   Reg 0x32 = 0xAA (170)
+2026-07-01 20:36:15 | DEBUG   | READ  addr=0x61 port=1 reg=[0x33] → [0xAA] status=OK
+2026-07-01 20:36:15 | INFO    |   Reg 0x33 = 0xAA (170)
+2026-07-01 20:36:15 | DEBUG   | READ  addr=0x61 port=1 reg=[0x34] → [0xAA] status=OK
+2026-07-01 20:36:15 | INFO    |   Reg 0x34 = 0xAA (170)
+2026-07-01 20:36:15 | DEBUG   | READ  addr=0x61 port=1 reg=[0x35] → [0xAA] status=OK
+2026-07-01 20:36:15 | INFO    |   Reg 0x35 = 0xAA (170)
+2026-07-01 20:36:15 | DEBUG   | READ  addr=0x61 port=1 reg=[0x36] → [0xAA] status=OK
+2026-07-01 20:36:15 | INFO    |   Reg 0x36 = 0xAA (170)
+2026-07-01 20:36:15 | DEBUG   | READ  addr=0x61 port=1 reg=[0x37] → [0xAA] status=OK
+2026-07-01 20:36:15 | INFO    |   Reg 0x37 = 0xAA (170)
+2026-07-01 20:36:15 | DEBUG   | READ  addr=0x61 port=1 reg=[0x38] → [0xAA] status=OK
+2026-07-01 20:36:15 | INFO    |   Reg 0x38 = 0xAA (170)
+2026-07-01 20:36:15 | DEBUG   | READ  addr=0x61 port=1 reg=[0x39] → [0xAA] status=OK
+2026-07-01 20:36:15 | INFO    |   Reg 0x39 = 0xAA (170)
+2026-07-01 20:36:15 | DEBUG   | READ  addr=0x61 port=1 reg=[0x3A] → [0xAA] status=OK
+2026-07-01 20:36:15 | INFO    |   Reg 0x3A = 0xAA (170)
+2026-07-01 20:36:15 | DEBUG   | READ  addr=0x61 port=1 reg=[0x3B] → [0xAA] status=OK
+2026-07-01 20:36:15 | INFO    |   Reg 0x3B = 0xAA (170)
+2026-07-01 20:36:15 | DEBUG   | READ  addr=0x61 port=1 reg=[0x3C] → [0xAA] status=OK
+2026-07-01 20:36:15 | INFO    |   Reg 0x3C = 0xAA (170)
+2026-07-01 20:36:15 | DEBUG   | READ  addr=0x61 port=1 reg=[0x3D] → [0xAA] status=OK
+2026-07-01 20:36:15 | INFO    |   Reg 0x3D = 0xAA (170)
+2026-07-01 20:36:15 | DEBUG   | READ  addr=0x61 port=1 reg=[0x3E] → [0xAA] status=OK
+2026-07-01 20:36:15 | INFO    |   Reg 0x3E = 0xAA (170)
+2026-07-01 20:36:15 | DEBUG   | READ  addr=0x61 port=1 reg=[0x3F] → [0xAA] status=OK
+2026-07-01 20:36:15 | INFO    |   Reg 0x3F = 0xAA (170)
+2026-07-01 20:36:15 | DEBUG   | READ  addr=0x61 port=1 reg=[0x40] → [0xAA] status=OK
+2026-07-01 20:36:15 | INFO    |   Reg 0x40 = 0xAA (170)
+2026-07-01 20:36:15 | DEBUG   | READ  addr=0x61 port=1 reg=[0x80] → [0xAA] status=OK
+2026-07-01 20:36:15 | INFO    |   Reg 0x80 = 0xAA (170)
+2026-07-01 20:36:15 | DEBUG   | READ  addr=0x61 port=1 reg=[0x81] → [0xAA] status=OK
+2026-07-01 20:36:15 | INFO    |   Reg 0x81 = 0xAA (170)
+2026-07-01 20:36:15 | DEBUG   | READ  addr=0x61 port=1 reg=[0x82] → [0xAA] status=OK
+2026-07-01 20:36:15 | INFO    |   Reg 0x82 = 0xAA (170)
+2026-07-01 20:36:15 | DEBUG   | READ  addr=0x61 port=1 reg=[0x83] → [0xAA] status=OK
+2026-07-01 20:36:15 | INFO    |   Reg 0x83 = 0xAA (170)
+2026-07-01 20:36:15 | DEBUG   | READ  addr=0x61 port=1 reg=[0x84] → [0xAA] status=OK
+2026-07-01 20:36:15 | INFO    |   Reg 0x84 = 0xAA (170)
+2026-07-01 20:36:15 | DEBUG   | READ  addr=0x61 port=1 reg=[0x85] → [0xAA] status=OK
+2026-07-01 20:36:15 | INFO    |   Reg 0x85 = 0xAA (170)
+2026-07-01 20:36:15 | DEBUG   | READ  addr=0x61 port=1 reg=[0x86] → [0xAA] status=OK
+2026-07-01 20:36:15 | INFO    |   Reg 0x86 = 0xAA (170)
+2026-07-01 20:36:15 | DEBUG   | READ  addr=0x61 port=1 reg=[0x87] → [0xAA] status=OK
+2026-07-01 20:36:15 | INFO    |   Reg 0x87 = 0xAA (170)
+2026-07-01 20:36:15 | DEBUG   | READ  addr=0x61 port=1 reg=[0x88] → [0xAA] status=OK
+2026-07-01 20:36:15 | INFO    |   Reg 0x88 = 0xAA (170)
+2026-07-01 20:36:15 | DEBUG   | READ  addr=0x61 port=1 reg=[0x89] → [0xAA] status=OK
+2026-07-01 20:36:15 | INFO    |   Reg 0x89 = 0xAA (170)
+2026-07-01 20:36:15 | DEBUG   | READ  addr=0x61 port=1 reg=[0x8A] → [0xAA] status=OK
+2026-07-01 20:36:15 | INFO    |   Reg 0x8A = 0xAA (170)
+2026-07-01 20:36:15 | DEBUG   | READ  addr=0x61 port=1 reg=[0x8B] → [0xAA] status=OK
+2026-07-01 20:36:15 | INFO    |   Reg 0x8B = 0xAA (170)
+2026-07-01 20:36:15 | DEBUG   | READ  addr=0x61 port=1 reg=[0x8C] → [0xAA] status=OK
+2026-07-01 20:36:15 | INFO    |   Reg 0x8C = 0xAA (170)
+2026-07-01 20:36:15 | DEBUG   | READ  addr=0x61 port=1 reg=[0x8D] → [0xAA] status=OK
+2026-07-01 20:36:15 | INFO    |   Reg 0x8D = 0xAA (170)
+2026-07-01 20:36:15 | DEBUG   | READ  addr=0x61 port=1 reg=[0x8E] → [0xAA] status=OK
+2026-07-01 20:36:15 | INFO    |   Reg 0x8E = 0xAA (170)
+2026-07-01 20:36:15 | DEBUG   | READ  addr=0x61 port=1 reg=[0x8F] → [0xAA] status=OK
+2026-07-01 20:36:15 | INFO    |   Reg 0x8F = 0xAA (170)
+2026-07-01 20:36:15 | DEBUG   | READ  addr=0x61 port=1 reg=[0x90] → [0xAA] status=OK
+2026-07-01 20:36:15 | INFO    |   Reg 0x90 = 0xAA (170)
+2026-07-01 20:36:15 | INFO    | ==================================================
+2026-07-01 20:36:15 | INFO    | STEP 3: Attempting to set color R=0 G=102 B=255...
+2026-07-01 20:36:15 | INFO    | ==================================================
+2026-07-01 20:36:15 | DEBUG   | WRITE addr=0x61 port=1 reg=[0x01] data=[0x01 0x00 0x66 0xFF] → status=0
+2026-07-01 20:36:15 | INFO    |   Colorful-A: reg=0x01, data=[mode=0x01, R, G, B] → status=0
+2026-07-01 20:36:15 | DEBUG   | WRITE addr=0x61 port=1 reg=[0x04] data=[0x00 0x00 0x66 0xFF 0xFF] → status=0
+2026-07-01 20:36:15 | INFO    |   Colorful-B: reg=0x04, data=[mode=0x00, R, G, B, brightness=0xFF] → status=0
+2026-07-01 20:36:15 | DEBUG   | WRITE addr=0x61 port=1 reg=[0x00] data=[0x00 0x66 0xFF] → status=0
+2026-07-01 20:36:15 | INFO    |   Direct-RGB: reg=0x00, data=[R, G, B] → status=0
+2026-07-01 20:36:15 | DEBUG   | WRITE addr=0x61 port=1 reg=[0x35] data=[0x00] → status=0
+2026-07-01 20:36:15 | INFO    |   ENE-mode: reg=0x35, data=[0x00] (set direct mode) → status=0
+2026-07-01 20:36:15 | DEBUG   | WRITE addr=0x61 port=1 reg=[0x36] data=[0x00 0x66 0xFF] → status=0
+2026-07-01 20:36:15 | INFO    |   ENE-color: reg=0x36, data=[R, G, B] → status=0
+2026-07-01 20:36:15 | DEBUG   | WRITE addr=0x61 port=1 reg=[0xB0] data=[0x01 0x00 0x00 0x66 0xFF] → status=0
+2026-07-01 20:36:15 | INFO    |   Header-zone: reg=0xB0, data=[0x01, zone=0x00, R, G, B] → status=0
+2026-07-01 20:36:15 | DEBUG   | WRITE addr=0x61 port=1 reg=[0x10] data=[0x00 0x66 0xFF] → status=0
+2026-07-01 20:36:15 | INFO    |   Reg-0x10: reg=0x10, data=[R, G, B] → status=0
+2026-07-01 20:36:15 | DEBUG   | WRITE addr=0x61 port=1 reg=[0x01] data=[0x00] → status=0
+2026-07-01 20:36:15 | INFO    |   Separate-R: reg=0x01, data=[R] → status=0
+2026-07-01 20:36:15 | DEBUG   | WRITE addr=0x61 port=1 reg=[0x02] data=[0x66] → status=0
+2026-07-01 20:36:15 | INFO    |   Separate-G: reg=0x02, data=[G] → status=0
+2026-07-01 20:36:15 | DEBUG   | WRITE addr=0x61 port=1 reg=[0x03] data=[0xFF] → status=0
+2026-07-01 20:36:15 | INFO    |   Separate-B: reg=0x03, data=[B] → status=0
+2026-07-01 20:36:16 | DEBUG   | WRITE addr=0x61 port=1 reg=[0x04] data=[0x00] → status=0
+2026-07-01 20:36:16 | INFO    |   Separate-R@04: reg=0x04, data=[R] → status=0
+2026-07-01 20:36:16 | DEBUG   | WRITE addr=0x61 port=1 reg=[0x05] data=[0x66] → status=0
+2026-07-01 20:36:16 | INFO    |   Separate-G@05: reg=0x05, data=[G] → status=0
+2026-07-01 20:36:16 | DEBUG   | WRITE addr=0x61 port=1 reg=[0x06] data=[0xFF] → status=0
+2026-07-01 20:36:16 | INFO    |   Separate-B@06: reg=0x06, data=[B] → status=0
+2026-07-01 20:36:16 | DEBUG   | WRITE addr=0x61 port=1 reg=[0xE0] data=[0x35 0x01 0x00 0x66 0xFF] → status=0
+2026-07-01 20:36:16 | INFO    |   Colorful-CMD: reg=0xE0, data=[0x35, 0x01, R, G, B] → status=0
+2026-07-01 20:36:16 | DEBUG   | WRITE addr=0x61 port=1 reg=[0xFF] data=[0x01] → status=0
+2026-07-01 20:36:16 | INFO    |   Apply-commit: reg=0xFF, data=[0x01] → status=0
+2026-07-01 20:36:16 | DEBUG   | WRITE addr=0x61 port=1 reg=[0x00] data=[0x01 0x01 0x00 0x66 0xFF 0xFF 0x00] → status=0
+2026-07-01 20:36:16 | INFO    |   Full-packet: reg=0x00, data=[0x01, 0x01, R, G, B, 0xFF, 0x00] → status=0
+2026-07-01 20:36:16 | INFO    | ==================================================
+2026-07-01 20:36:16 | INFO    | STEP 4: Verifying — reading registers after write...
+2026-07-01 20:36:16 | INFO    | ==================================================
+2026-07-01 20:36:16 | DEBUG   | READ  addr=0x61 port=1 reg=[0x00] → [0xAA] status=OK
+2026-07-01 20:36:16 | INFO    |   Post-write Reg 0x00 = 0xAA
+2026-07-01 20:36:16 | DEBUG   | READ  addr=0x61 port=1 reg=[0x01] → [0xAA] status=OK
+2026-07-01 20:36:16 | INFO    |   Post-write Reg 0x01 = 0xAA
+2026-07-01 20:36:16 | DEBUG   | READ  addr=0x61 port=1 reg=[0x02] → [0xAA] status=OK
+2026-07-01 20:36:16 | INFO    |   Post-write Reg 0x02 = 0xAA
+2026-07-01 20:36:16 | DEBUG   | READ  addr=0x61 port=1 reg=[0x03] → [0xAA] status=OK
+2026-07-01 20:36:16 | INFO    |   Post-write Reg 0x03 = 0xAA
+2026-07-01 20:36:16 | DEBUG   | READ  addr=0x61 port=1 reg=[0x04] → [0xAA] status=OK
+2026-07-01 20:36:16 | INFO    |   Post-write Reg 0x04 = 0xAA
+2026-07-01 20:36:16 | DEBUG   | READ  addr=0x61 port=1 reg=[0x05] → [0xAA] status=OK
+2026-07-01 20:36:16 | INFO    |   Post-write Reg 0x05 = 0xAA
+2026-07-01 20:36:16 | DEBUG   | READ  addr=0x61 port=1 reg=[0x06] → [0xAA] status=OK
+2026-07-01 20:36:16 | INFO    |   Post-write Reg 0x06 = 0xAA
+2026-07-01 20:36:16 | DEBUG   | READ  addr=0x61 port=1 reg=[0x07] → [0xAA] status=OK
+2026-07-01 20:36:16 | INFO    |   Post-write Reg 0x07 = 0xAA
+2026-07-01 20:36:16 | DEBUG   | READ  addr=0x61 port=1 reg=[0x08] → [0xAA] status=OK
+2026-07-01 20:36:16 | INFO    |   Post-write Reg 0x08 = 0xAA
+2026-07-01 20:36:16 | DEBUG   | READ  addr=0x61 port=1 reg=[0x09] → [0xAA] status=OK
+2026-07-01 20:36:16 | INFO    |   Post-write Reg 0x09 = 0xAA
+2026-07-01 20:36:16 | DEBUG   | READ  addr=0x61 port=1 reg=[0x0A] → [0xAA] status=OK
+2026-07-01 20:36:16 | INFO    |   Post-write Reg 0x0A = 0xAA
+2026-07-01 20:36:16 | DEBUG   | READ  addr=0x61 port=1 reg=[0x0B] → [0xAA] status=OK
+2026-07-01 20:36:16 | INFO    |   Post-write Reg 0x0B = 0xAA
+2026-07-01 20:36:16 | DEBUG   | READ  addr=0x61 port=1 reg=[0x0C] → [0xAA] status=OK
+2026-07-01 20:36:16 | INFO    |   Post-write Reg 0x0C = 0xAA
+2026-07-01 20:36:16 | DEBUG   | READ  addr=0x61 port=1 reg=[0x0D] → [0xAA] status=OK
+2026-07-01 20:36:16 | INFO    |   Post-write Reg 0x0D = 0xAA
+2026-07-01 20:36:16 | DEBUG   | READ  addr=0x61 port=1 reg=[0x0E] → [0xAA] status=OK
+2026-07-01 20:36:16 | INFO    |   Post-write Reg 0x0E = 0xAA
+2026-07-01 20:36:16 | DEBUG   | READ  addr=0x61 port=1 reg=[0x0F] → [0xAA] status=OK
+2026-07-01 20:36:16 | INFO    |   Post-write Reg 0x0F = 0xAA
+2026-07-01 20:36:16 | INFO    | Complete. success_count=16
